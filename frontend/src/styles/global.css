@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "flowbite";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    transition: all 0.15s ease-in-out;
+    @apply font-inter;
+}
+
+*::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: theme(colors.malibu.500);
+    border-radius: theme(borderRadius.DEFAULT);
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: theme(colors.primary.900);
+}
+
+.form-container {
+    @apply max-w-md mx-auto p-8 bg-white shadow-lg rounded-lg;
+}
+
+.form-title {
+    @apply text-2xl font-bold mb-4 text-center;
+}
+
+.form-input {
+    @apply w-full p-2 border rounded-lg mb-4;
+}
+
+.form-button {
+    @apply w-full py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600;
+}
+
+.form-text {
+    @apply text-center mt-4;
+}
+
+.form-link {
+    @apply text-blue-500 hover:underline;
+}
